@@ -1,0 +1,2 @@
+1. make landing card call for action -> e.g. SCROLL (implement it) / click, etc
+2.

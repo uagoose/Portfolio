@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAGoose – Developer & Game Systems Engineer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about_section.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--fade in effect-->
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            will-change: opacity;
+        }
+
+        body.show {
+            opacity: 1;
+        }
+    </style>
+    <script src="js/main_page.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1><a href="landing_page.html">UAGoose •</a></h1>
+            <nav class="header-nav">
+                <!-- <a href="landing_page.html">HOME</a> -->
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main-page">
+        <section id="about" class="about-content">
+            <div class="profile-pic">
+                <img src="images/ProfilePic.jpg" alt="UAGoose">
+            </div>
+
+            <div class="about-text">
+                <p class="about-main-text">
+                    Engineering backend systems, developing games, and designing UI/UX.
+                </p>
+
+                <p class="about-sub-text">
+                    I’m a game and backend developer based in Central Europe (GMT+2) with 5+ years of hands-on
+                    programming.
+
+                    I focus on building interactive systems, multiplayer-ready logic, and performance-conscious
+                    architectures for live, player-driven environments. My work is primarily in Luau, alongside Python
+                    and C#, and spans gameplay systems, backend services, persistent data, and real-time interactions.
+
+                    Outside of game platforms, I’ve also explored data analysis, AI and ML, microcontrollers, and
+                    low-level programming, which strongly influences how I design scalable and resilient systems.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section-column">
+            <h1>Projects</h1>
+            <div class="projects-row">
+                <div class="projects-row">
+                    <a href="projects/gpu_sim.html" class="project-link">
+                        <div class="project-box">
+                            <div class="preview-image">
+                                <img src="images/project_previews/gpu_sim.png"
+                                    alt="GPU Simulation project preview: rasterization and shader simulation in Roblox">
+                            </div>
+                            <div class="preview-text-box">
+                                <p class="preview-title">GPU Simulation</p>
+                                <p class="preview-desc">GPU simulation in roblox. Handles rasterization, occlusion,
+                                    timing and even shaders. Can be used in roblox VM projects as video output.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="projects/rttf.html" class="project-link">
+                        <div class="project-box">
+                            <div class="preview-image">
+                                <img src="images/project_previews/rttf.png" alt="">
+                            </div>
+                            <div class="preview-text-box">
+                                <p class="preview-title">Run To The Future</p>
+                                <p class="preview-desc">Solely developed and maintained 80% of the codebase for a sci-fi
+                                    MMO Open World Survival game.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="projects/flight_horizon.html" class="project-link">
+                        <div class="project-box">
+                            <div class="preview-image">
+                                <img src="images/project_previews/FlightHorizon.png" alt="">
+                            </div>
+                            <div class="preview-text-box">
+                                <p class="preview-title">Flight Simulator</p>
+                                <p class="preview-desc">Implemented aerodynamics and complex surface GUI for realistic
+                                    tools like altimeter, velocity displays, interactive maps and more.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <a href="project_list.html" class="view-more-link">view more projects</a>
+        </section>
+
+        <section id="skills" class="section-column">
+            <h1>Skills</h1>
+            <div class="skill-section">
+                <p class="skill-group-title">Languages</p>
+
+                <div class="skill-box-row">
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">Lua and Luau</span>
+                            <img src="images/skill_icons/lua.webp" alt="Lua">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">Python</span>
+                            <img src="images/skill_icons/python.png" alt="Python">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">C#</span>
+                            <img src="images/skill_icons/c-sharp.webp" alt="C#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <p class="skill-group-title">Web & Data</p>
+
+                <div class="skill-box-row">
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">HTML</span>
+                            <img src="images/skill_icons/html.webp" alt="HTML">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">CSS</span>
+                            <img src="images/skill_icons/css.png" alt="CSS">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">Javascript</span>
+                            <img src="images/skill_icons/js.png" alt="JS">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">SQL</span>
+                            <img src="images/skill_icons/sql.png" alt="SQL">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <p class="skill-group-title">Tools & Platforms</p>
+
+                <div class="skill-box-row">
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">Roblox Studio</span>
+                            <img src="images/skill_icons/roblox_studio.png" alt="Roblox Studio">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">Unity</span>
+                            <img src="images/skill_icons/unity.png" alt="Unity">
+                        </div>
+                    </div>
+
+                    <div class="skill-box-outer">
+                        <div class="skill-border-div"></div>
+
+                        <div class="skill-box-inner">
+                            <span class="tooltip">Figma</span>
+                            <img src="images/skill_icons/figma.png" alt="Figma">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-column">
+            <h1>Contact</h1>
+
+            <!-- Add this somewhere inside your contact column -->
+            <div id="copy-feedback" style="
+                    position: fixed;
+                    top: 20%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #04743c;
+                    color: white;
+                    padding: 0.5rem 1rem;
+                    border-radius: 10px;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 0.3s ease;
+                    font-family: sans-serif;
+                    z-index: 2;
+                ">Copied to clipboard!</div>
+
+
+            <div class="contact-row">
+                <div class="contact-box">
+                    <a href="mailto:goose.the.ua@gmail.com" id="copy-email">
+                        <img src="images/contact-gmail.webp" alt="Gmail: goose.the.ua@gmail.com">
+                    </a>
+                </div>
+
+
+                <div class="contact-box preferred-contact-deco">
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://discordapp.com/users/969188815044505612"><img src="images/contact-discord.webp"
+                            alt="Discord user: uagoose"></a>
+                </div>
+
+                <div class="contact-box">
+                    <a target="_blank" rel="noopener noreferrer" href="https://devforum.roblox.com/u/UQGoose/"><img
+                            src="images/contact-roblox.png" alt="Roblox user: UQGoose"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 UAGoose. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+<!--TOOD: add back button for Projects (+ came from url parameter to return exactly where it was accessed from)-->
+<!--TODO: add major projects to the portfolio-->

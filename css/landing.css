@@ -1,0 +1,111 @@
+.landing, .landing-content {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 100vh; 
+    width: 100vw;
+}
+
+/* Landing page container */
+.landing {
+    position: relative;
+    overflow: hidden;
+
+    /* Base background image is now in ::before so we can control opacity */
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("../images/LandingBGTexture.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.5;  /* 50% transparency for bg image */
+    z-index: 0;
+}
+
+.landing::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+
+    /* Combine blue-tinted overlay + black shadow gradient using multiple backgrounds */
+    background:
+        linear-gradient(
+            70deg,               
+            rgba(0,0,0,1) 58%,  
+            rgba(0,0,0,0) 100%
+        ),
+        linear-gradient(
+            70deg,               
+            rgba(0, 106, 255, 0.6) 70%,  
+            rgba(0, 0, 0, 0.3) 100%
+        );
+
+    z-index: 0.5;
+}
+
+/* Landing content above all layers */
+.landing-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Header and subheader styling */
+.landing-header {
+    text-align: center;
+    color: #E1E1E1;
+    font-size: 50pt;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-bottom: 7px;
+}
+
+.landing-subheader {
+    text-align: center;
+    color: #898989;
+    font-size: 15pt;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-style: italic;
+    margin-top: 0;
+}
+
+/* Bottom-left avatar */
+.landing-avatar-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: auto;
+    z-index: 1; /* above background and gradients */
+
+    user-drag: none;           /* Safari / Chrome */
+    -webkit-user-drag: none;   /* Chrome / Safari */
+    -moz-user-select: none;    /* Firefox fallback */
+    -ms-user-select: none;     /* IE/Edge fallback */
+    pointer-events: none;      /* optional: prevent accidental drag interactions */
+}
+
+.landing, 
+.landing-content, 
+.landing-header, 
+.landing-subheader {
+    user-select: none;   /* disables text selection */
+    -webkit-user-select: none; /* for Safari/Chrome */
+    -moz-user-select: none;    /* for Firefox */
+    -ms-user-select: none;     /* for IE/Edge */
+}
+
