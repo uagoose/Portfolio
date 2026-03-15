@@ -1,4 +1,5 @@
-.landing, .landing-content {
+.landing,
+.landing-content {
     margin: 0;
     padding: 0;
 
@@ -8,7 +9,7 @@
     align-items: center;
     position: relative;
 
-    height: 100vh; 
+    height: 100vh;
     width: 100vw;
 }
 
@@ -23,36 +24,37 @@
 .landing::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../images/LandingBGTexture.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    opacity: 0.5;  /* 50% transparency for bg image */
+    opacity: 0.5;
+    /* 50% transparency for bg image */
     z-index: 0;
 }
 
 .landing::after {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
 
     /* Combine blue-tinted overlay + black shadow gradient using multiple backgrounds */
     background:
-        linear-gradient(
-            70deg,               
-            rgba(0,0,0,1) 58%,  
-            rgba(0,0,0,0) 100%
-        ),
-        linear-gradient(
-            70deg,               
-            rgba(0, 106, 255, 0.6) 70%,  
-            rgba(0, 0, 0, 0.3) 100%
-        );
+        linear-gradient(70deg,
+            rgba(0, 0, 0, 1) 58%,
+            rgba(0, 0, 0, 0) 100%),
+        linear-gradient(70deg,
+            rgba(0, 106, 255, 0.6) 70%,
+            rgba(0, 0, 0, 0.3) 100%);
 
     z-index: 0.5;
 }
@@ -90,22 +92,30 @@
     left: 0;
     width: 20%;
     height: auto;
-    z-index: 1; /* above background and gradients */
+    z-index: 1;
+    /* above background and gradients */
 
-    user-drag: none;           /* Safari / Chrome */
-    -webkit-user-drag: none;   /* Chrome / Safari */
-    -moz-user-select: none;    /* Firefox fallback */
-    -ms-user-select: none;     /* IE/Edge fallback */
-    pointer-events: none;      /* optional: prevent accidental drag interactions */
+    user-drag: none;
+    /* Safari / Chrome */
+    -webkit-user-drag: none;
+    /* Chrome / Safari */
+    -moz-user-select: none;
+    /* Firefox fallback */
+    -ms-user-select: none;
+    /* IE/Edge fallback */
+    pointer-events: none;
 }
 
-.landing, 
-.landing-content, 
-.landing-header, 
+.landing,
+.landing-content,
+.landing-header,
 .landing-subheader {
-    user-select: none;   /* disables text selection */
-    -webkit-user-select: none; /* for Safari/Chrome */
-    -moz-user-select: none;    /* for Firefox */
-    -ms-user-select: none;     /* for IE/Edge */
+    user-select: none;
+    /* disables text selection */
+    -webkit-user-select: none;
+    /* for Safari/Chrome */
+    -moz-user-select: none;
+    /* for Firefox */
+    -ms-user-select: none;
+    /* for IE/Edge */
 }
-

@@ -25,38 +25,37 @@ body {
     width: 100%;
     margin-top: -10vh;
     padding-top: 10vh;
-    background: linear-gradient(
-        to bottom right,   
-        #1B005A 5%,       
-        #010031 20%,      
-        black 50%,           
-        #1F0135 78%,          
-        #2A0060 95%            
-    );
+    background: linear-gradient(to bottom right,
+            #1B005A 5%,
+            #010031 20%,
+            black 50%,
+            #1F0135 78%,
+            #2A0060 95%);
 }
 
 .main-header {
     width: 100%;
-    height: 10vh; 
+    height: 10vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;   
-    justify-content: flex-start; 
-    position: sticky;       
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
     top: 0;
     z-index: 10;
     border-bottom: 2px solid var(--border-color);
     backdrop-filter: blur(5px) saturate(120%) brightness(100%);
     -webkit-backdrop-filter: blur(3px) saturate(120%) brightness(100%);
-    background-image: linear-gradient(-45deg, rgba(255,255,255,0.05), rgba(0,0,0,0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0));
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* title left, nav right */
+    justify-content: space-between;
+    /* title left, nav right */
     width: 100%;
-    padding: 0 1.5rem; /* optional: left/right spacing */
+    padding: 0 1.5rem;
 }
 
 .header-content h1 {
@@ -66,9 +65,9 @@ body {
     font-size: 15pt;
     margin: 0;
 
-    user-select: none;  
-    -webkit-user-select: none; 
-    -moz-user-select: none;   
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
 }
 
@@ -81,7 +80,8 @@ body {
 
 .header-nav {
     display: flex;
-    gap: 2rem; /* space between buttons */
+    gap: 2rem;
+    /* space between buttons */
 }
 
 .header-nav a {
@@ -92,11 +92,15 @@ body {
     padding: 0.25rem 0.5rem;
     transition: color 0.2s, transform 0.2s;
 
-    user-select: none;   /* disables text selection */
-    -webkit-user-select: none; /* for Safari/Chrome */
-    -moz-user-select: none;    /* for Firefox */
-    -ms-user-select: none;     /* for IE/Edge */
-    -webkit-user-drag: none; 
+    user-select: none;
+    /* disables text selection */
+    -webkit-user-select: none;
+    /* for Safari/Chrome */
+    -moz-user-select: none;
+    /* for Firefox */
+    -ms-user-select: none;
+    /* for IE/Edge */
+    -webkit-user-drag: none;
 
 }
 
@@ -114,17 +118,20 @@ body {
 
 .main-footer {
     width: 100%;
-    height: 10vh;               /* same height as header */
-    background-color: black;    
-    border-top: 2px solid var(--border-color); 
+    height: 10vh;
+    /* same height as header */
+    background-color: black;
+    border-top: 2px solid var(--border-color);
     display: flex;
-    justify-content: center;     /* center horizontally */
-    align-items: center;         /* center vertically */
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
     color: var(--light-text-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 12pt;
-    position: relative;          /* optional if you want it fixed or sticky */
+    position: relative;
     z-index: 10;
 }
 
@@ -137,7 +144,8 @@ section {
 
 .section-column {
     display: flex;
-    flex-direction: column;   /* stack children vertically */
+    flex-direction: column;
+    /* stack children vertically */
     align-items: center;
     justify-content: center;
     padding-bottom: 10rem;
@@ -150,7 +158,8 @@ h1 {
 }
 
 .tooltip {
-    visibility: hidden; /* hidden by default */
+    visibility: hidden;
+    /* hidden by default */
     width: max-content;
     background-color: rgba(43, 0, 47, 0.8);
     color: #fff;
@@ -159,12 +168,14 @@ h1 {
     padding: 4px 8px;
     font-size: 0.8rem;
     position: absolute;
-    bottom: 110%; /* above the icon */
+    bottom: 110%;
+    /* above the icon */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
-    pointer-events: none; /* ignore mouse events */
+    pointer-events: none;
+    /* ignore mouse events */
     white-space: nowrap;
     z-index: 10;
 }
