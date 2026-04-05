@@ -29,7 +29,8 @@
     flex-direction: column;
     align-items: center;
 
-    gap: 1.2rem;      /* title ↔ rows spacing */
+    gap: 1.2rem;
+    /* title ↔ rows spacing */
     padding-top: 5rem;
 }
 
@@ -45,9 +46,10 @@
 /* -------------------------------------------------- */
 
 .skill-box-outer {
-    position: relative; /* enable absolute positioning inside */
-    width: 8vw;
-    height: 8vw;
+    position: relative;
+    /* enable absolute positioning inside */
+    width: 8rem;
+    height: 8rem;
 
     margin: 1rem;
 
@@ -84,30 +86,40 @@
     width: 80%;
     height: 80%;
 
-    user-select: none;   /* disables text selection */
-    -webkit-user-select: none; /* for Safari/Chrome */
-    -moz-user-select: none;    /* for Firefox */
-    -ms-user-select: none;     /* for IE/Edge */
-    -webkit-user-drag: none; 
-    pointer-events: none; 
+    user-select: none;
+    /* disables text selection */
+    -webkit-user-select: none;
+    /* for Safari/Chrome */
+    -moz-user-select: none;
+    /* for Firefox */
+    -ms-user-select: none;
+    /* for IE/Edge */
+    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 .skill-border-div {
-    position: absolute;  /* take it out of flow */
-    
-    width: calc(88% + 3px);   /* slightly bigger than inner box */
-    height: calc(88% + 3px);
-    border-radius: 25px;       /* match inner box radius */
-    
-    /* glass border effect */
-    background: linear-gradient(
-        -45deg, 
-        #878787,   /* white start */
-        var(--BoxGrayLightBG),   /* middle */
-        #878787    /* white end */
-    );
+    position: absolute;
+    /* take it out of flow */
 
-    z-index: 0;                /* behind */
+    width: calc(88% + 3px);
+    /* slightly bigger than inner box */
+    height: calc(88% + 3px);
+    border-radius: 25px;
+    /* match inner box radius */
+
+    /* glass border effect */
+    background: linear-gradient(-45deg,
+            #878787,
+            /* white start */
+            var(--BoxGrayLightBG),
+            /* middle */
+            #878787
+            /* white end */
+        );
+
+    z-index: 0;
+    /* behind */
 }
 
 .skill-box-outer {
@@ -119,5 +131,3 @@
     transform: translateY(-3%) scale(1.05); 
     box-shadow: 0 2px 10px rgba(198, 106, 255, 0.25);  BAD, THIS ELEMENT IS NOT INTERACTABLE
 } */
-
-

@@ -1,17 +1,17 @@
 .projects-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5vw;
+    gap: 5rem;
     /* ~5% horizontal gap between cards */
     justify-content: center;
     /* center row if fewer than 3 cards */
-    padding: 2vw 0;
-    padding-top: 5vh;
+    padding: 2rem 0;
+    padding-top: 3rem;
 }
 
 .project-box {
-    width: 25vw;
-    height: 50vh;
+    width: 25rem;
+    height: 24rem;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border-color);
