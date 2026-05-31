@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/skills.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="../js/jquery-4.0.0.js"></script>
+    <script src="../js/project_page.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>UAGoose •</h1>
+            <nav class="header-nav">
+                <!-- <a href="landing_page.html">HOME</a> -->
+                <a href="../main.html#about">ABOUT</a>
+                <a href="../main.html#projects">PROJECTS</a>
+                <a href="../main.html#skills">SKILLS</a>
+                <a href="../main.html#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main-page">
+        <section id="projects" class="project-details-column">
+            <div class="video-wrapper">
+                <video class="project-video" controls width="80%" poster="../images/project_previews/FlightHorizon.png">
+                    <source src="../videos/flightHorizon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <a id="back-btn" href="#" class="view-more-link">
+                < back</a>
+
+                    <h1 class="project-details-title">Flight Horizon</h1>
+
+                    <p class="project-details-description">
+                        Flight Horizon is one of my first projects I've made with a team. The project is mainly focused on realistic flight physics and 
+                        player-to-player RPG-style communication. It was inspired by <a href="https://www.roblox.com/games/20321167/Pilot-Training-Flight-Simulator">PTFS (Pilot training flight simulator)</a>. 
+                        There I've learned basics of system design within Roblox Studio, Roblox's vehicle framework, Datastores and UI.
+                    </p>
+
+                    <div class="project-details-description">
+                        Details / Features (Implemented by Me):
+                        <ul>
+                            <li>Flight Physics: Calculate forces based on vehicle's shape.</li>
+                            <li>Flgiht Control: A way to control the flight by moving specific parts of the aircraft.</li>
+                            <li>Dynamic Lighting System: Realistic day/night cycles and environmental lighting that
+                                enhance immersion.</li>
+                            <li>Daily Rewards System: track last claim time (using datastores) and show configured reward previews.</li>
+                            <li>Enhanced Chat Communication: Role-based coloring, groups and radio-like announcements.</li>
+                            <img src="../images/project_details/flight_horizon/radio-comms.png" alt="Radio communication preview.">
+                        </ul>
+                    </div>
+
+
+                    <div class="skill-box-row">
+                        <div class="skill-box-outer">
+                            <div class="skill-border-div"></div>
+
+                            <div class="skill-box-inner">
+                                <span class="tooltip">Lua and Luau</span>
+                                <img src="../images/skill_icons/lua.webp" alt="Lua">
+                            </div>
+                        </div>
+
+                        <div class="skill-box-outer">
+                            <div class="skill-border-div"></div>
+
+                            <div class="skill-box-inner">
+                                <span class="tooltip">Roblox Studio</span>
+                                <img src="../images/skill_icons/roblox_studio.png" alt="Roblox Studio">
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 UAGoose. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
